@@ -1,8 +1,10 @@
+import Wrapper from "./Components/Wrapper"
+
 function App() {
 
   return (
     <>
-      MyCalc
+      <Wrapper />
     </>
   )
 }
