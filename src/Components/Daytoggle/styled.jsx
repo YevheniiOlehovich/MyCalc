@@ -11,7 +11,7 @@ export const Styled = {
         border-radius: 20px;
         background: ${({ nightmode }) => (nightmode ? "linear-gradient(180deg, #1BCEEC, #94E9F0)" : "linear-gradient(180deg, #2E2E8B, #15154E)" )};
         padding: 4px 6px;
-        transition: background 0.3s ease-in-out;
+        transition: background 0.5s ease-in-out;
     `,
 
     ToggleContainer : styled.div`
@@ -21,7 +21,7 @@ export const Styled = {
         position: absolute;
         top: 2px;
         left: ${({ nightmode }) => (nightmode ? "4px" : "calc(100% - 40px)")};
-        transition: left 0.3s ease-in-out;
+        transition: left 0.5s ease-in-out;
         z-index: 5;
     `,
     ToggleDecor : styled.div`
@@ -30,7 +30,7 @@ export const Styled = {
         position: absolute;
         top: 2px;
         right: ${({ nightmode }) => (nightmode ? "8px" : "calc(100% - 50px)")};
-        transition: right 0.3s ease-in-out;
+        transition: right 0.5s ease-in-out;
     `,
 
     ToggleIco : styled.img`
