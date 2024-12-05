@@ -9,7 +9,7 @@ export const Styled = {
         top: 72px;
         right: 52px;
         border-radius: 40px;
-        background-color: black;
+        background: ${({ nightmode }) => (nightmode ?  "#F7F8FB" : "linear-gradient(180deg, #17181A, #17181A)")};
         padding: 40px 32px;
         box-sizing: border-box;
         display: flex;

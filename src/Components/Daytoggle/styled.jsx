@@ -12,6 +12,7 @@ export const Styled = {
         background: ${({ nightmode }) => (nightmode ? "linear-gradient(180deg, #1BCEEC, #94E9F0)" : "linear-gradient(180deg, #2E2E8B, #15154E)" )};
         padding: 4px 6px;
         transition: background 0.5s ease-in-out;
+        border: 1px solid gold;
     `,
 
     ToggleContainer : styled.div`
