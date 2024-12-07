@@ -13,7 +13,7 @@ export default function Phone(){
         <>
         <Styled.Wrapper nightmode={nightmode}>
             <Bar />
-            {/* <Display /> */}
+            <Display />
             <Keyboard />
         </Styled.Wrapper>
         <Styled.Shadow />
