@@ -7,13 +7,10 @@ export default function Display() {
         nightmode: state.theme.nightmode,
     }));
 
-    console.log(input)
-    console.log(result)
-    
     return (
         <Styled.Wrapper nightmode={nightmode}>
-            <Styled.Header>{result}</Styled.Header>
-            <Styled.Footer nightmode={nightmode}>{input}</Styled.Footer>
+            <Styled.Header>{input}</Styled.Header>
+            <Styled.Footer nightmode={nightmode}>={result}</Styled.Footer>
         </Styled.Wrapper>
     );
 }

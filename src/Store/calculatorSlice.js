@@ -1,33 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    input: "",
-    result: null,
-};
-
 const calculatorSlice = createSlice({
     name: "calculator",
-    initialState,
+    initialState: {
+        input: "",
+        result: "",
+    },
     reducers: {
-        addToInput: (state, action) => {
-            state.input += action.payload; // додаємо значення до інпута
+        setInput: (state, action) => {
+            state.input = action.payload;
         },
-        clearInput: (state) => {
+        setResult: (state, action) => {
+            state.result = action.payload;
+        },
+        clear: (state) => {
             state.input = "";
-            state.result = null;
-        },
-        calculateResult: (state) => {
-            try {
-                const sanitizedInput = state.input.replace(/[^-()\d/*+.]/g, "");
-                state.result = new Function("return " + sanitizedInput)();
-            } catch {
-                state.result = "Error";
-            }
+            state.result = "";
         },
     },
 });
 
-export const { addToInput, clearInput, calculateResult } =
-    calculatorSlice.actions;
+export const { setInput, setResult, clear } = calculatorSlice.actions;
 
 export default calculatorSlice.reducer;
