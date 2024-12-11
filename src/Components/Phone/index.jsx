@@ -7,8 +7,6 @@ import { useSelector} from 'react-redux'
 export default function Phone(){
     const nightmode = useSelector((state) => state.theme.nightmode);
 
-    
-
     return(
         <>
         <Styled.Wrapper nightmode={nightmode}>

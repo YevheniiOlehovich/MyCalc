@@ -10,7 +10,7 @@ export default function Display() {
     return (
         <Styled.Wrapper nightmode={nightmode}>
             <Styled.Header>{input}</Styled.Header>
-            <Styled.Footer nightmode={nightmode}>={result}</Styled.Footer>
+            {result && <Styled.Footer nightmode={nightmode}>= {result}</Styled.Footer>}
         </Styled.Wrapper>
     );
 }

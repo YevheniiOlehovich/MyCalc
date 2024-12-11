@@ -38,26 +38,21 @@ export const Styled = {
         &:hover{
             color: ${({ colour, nightmode }) => {
                 if (nightmode) {
-                    // Стилі, якщо nightmode === true
                     return colour === "blue" ? "#FFF" : "#38B9FF";
                 }
-                // Стилі, якщо nightmode === false
                 return colour === "blue" ? "#B2DAFF" : "#29A8FF";
             }};
 
             background-color: ${({ colour, nightmode }) => {
                 if (nightmode) {
-                    // Стилі, якщо nightmode === true
                     return colour === "blue" ? "#19ACFF" : "#fff";
                 }
-                // Стилі, якщо nightmode === false
                 return colour === "blue" ? "#1991FF" : "#303136";
                 
             }};
 
             border: 1px solid gold;
             box-sizing: border-box;
-            
         }
         margin-bottom: ${({ noneMargin }) => {
             if (noneMargin === 'none') return '0';

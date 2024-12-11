@@ -7,7 +7,6 @@ export default function Bar(){
             <Styled.ToggleBox>
                 <Daytoggle />
             </Styled.ToggleBox>
-            {/* <Styled.ToggleBox></Styled.ToggleBox> */}
         </Styled.Wrapper>
     )
 }

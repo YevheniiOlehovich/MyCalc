@@ -23,3 +23,5 @@ const calculatorSlice = createSlice({
 export const { setInput, setResult, clear } = calculatorSlice.actions;
 
 export default calculatorSlice.reducer;
+
+
