@@ -124,6 +124,7 @@ Error generating stack: `+u.message+`
         }
         @media (max-width: 376px) {
             height: 100vh;
+            width: 100vw;
             top: 0;
             left: 0;
             transform: translateX(0);
