@@ -23,6 +23,10 @@ export const Styled = {
         height: 900px;
         background-color: #109DFF;
         border-radius: 50%;
+        @media (max-width: 768px) {
+            border-radius: 0%;
+            background-color: rgba(16, 157, 255, 0.5);
+        }
     `,
     DecorEllipseWhite : styled.div`
         position: absolute;
@@ -32,6 +36,9 @@ export const Styled = {
         height: 23px;
         border-radius: 50%;
         background-color: white;
+        @media (max-width: 768px) {
+            z-index: 10;
+        }
     `,
     DecorEllipseBlue : styled.div`
         position: absolute;

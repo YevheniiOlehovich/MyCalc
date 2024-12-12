@@ -14,6 +14,12 @@ export const Styled = {
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        @media (max-width: 768px) {
+            top: 40px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     `,
     Shadow : styled.div`
         position: absolute;
@@ -25,5 +31,11 @@ export const Styled = {
         background-color: rgba(0, 68, 115, 0.28);
         border-radius: 40px;
         filter: blur(8px);
+        @media (max-width: 768px) {
+            top: 60px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-40%);
+        }
     `
 }
