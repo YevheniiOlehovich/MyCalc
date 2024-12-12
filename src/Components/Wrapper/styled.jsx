@@ -39,6 +39,9 @@ export const Styled = {
         @media (max-width: 768px) {
             z-index: 10;
         }
+        @media (max-width: 768px) {
+            z-index: 0;
+        }
     `,
     DecorEllipseBlue : styled.div`
         position: absolute;

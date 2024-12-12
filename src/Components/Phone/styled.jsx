@@ -20,6 +20,9 @@ export const Styled = {
             left: 50%;
             transform: translateX(-50%);
         }
+        @media (max-width: 768px) {
+            height: 690px;
+        }
     `,
     Shadow : styled.div`
         position: absolute;
