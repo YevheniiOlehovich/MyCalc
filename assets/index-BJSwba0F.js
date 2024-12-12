@@ -125,13 +125,8 @@ Error generating stack: `+u.message+`
             transform: translateX(-50%);
         }
         @media (max-width: 426px){
-            top: 4px;
-            left: 0;
-            transform: translateX(0);
-            justify-content: space-between;
-            /* height: calc(100vh - 8px); */
-            height: 750px;
-            width: 100vw;
+            height: auto;
+            width: 375px;
         } 
     `,Shadow:Ne.div`
         position: absolute;
@@ -159,7 +154,7 @@ Error generating stack: `+u.message+`
         display: flex;
         flex-direction: column;
         position: relative;
-        @media (max-width: 376px) {
+        @media (max-width: 425px) {
             height: auto;
         }
     `,Row:Ne.div`
@@ -177,9 +172,9 @@ Error generating stack: `+u.message+`
         bottom: 0;
         left: 0;
         @media (max-width: 426px) {
-            width: 260px;
+            width: 240px;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 426px) {
             width: 226px;
         }
     `},vy={Wrapper:Ne.div`
@@ -210,7 +205,7 @@ Error generating stack: `+u.message+`
         &:active{
             transform: translateY(2px);
         }
-        @media (max-width: 376px) {
+        @media (max-width: 425px) {
             width: ${({width:i})=>i==="big"?"144px":"60px"};
             height: ${({height:i})=>i==="small"?"32px":i==="big"?"70px":"40px"};
             margin-bottom: ${({noneMargin:i})=>i==="none"?"0":"8px"};
@@ -225,6 +220,7 @@ Error generating stack: `+u.message+`
         display: flex;
         flex-direction: column;
         @media (max-width: 376px) {
+            min-height: 200px;
             height: auto;
             font-size: 24px;
         }
