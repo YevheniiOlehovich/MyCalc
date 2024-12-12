@@ -73,7 +73,7 @@ Error generating stack: `+u.message+`
             background-color: rgba(16, 157, 255, 0.5);
             
         }
-        @media (max-width: 376px) {
+        @media (max-width: 426px) {
             top: 0;
             left: 0;
             transform: translate(0, 0);
