@@ -80,6 +80,8 @@ Error generating stack: `+u.message+`
             position: relative;
             display: flex;
             align-items: center;
+            width: 100vw;
+            height: 100vh;
         }
     `,DecorEllipseWhite:Ne.div`
         position: absolute;
