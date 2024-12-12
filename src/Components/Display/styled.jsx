@@ -10,8 +10,9 @@ export const Styled = {
         margin: 0;
         display: flex;
         flex-direction: column;
-        @media (max-width: 376px) {
-            height: 150px;
+        @media (max-width: 425px) {
+            min-height: 200px;
+            height: auto;
             font-size: 24px;
         }
     `,
@@ -21,8 +22,9 @@ export const Styled = {
         align-items: center;
         justify-content: flex-end;
         color: #818181;
-        @media (max-width: 376px) {
-            height: 50px;
+        @media (max-width: 425px) {
+            min-height: 100px;
+            height: auto;
         }
     `,
     Footer: styled.div`
@@ -31,8 +33,9 @@ export const Styled = {
         align-items: center;
         justify-content: flex-end;
         color: ${({ nightmode }) => (nightmode ? "#424242" : "#fff")};
-        @media (max-width: 376px) {
-            height: 100px;
+        @media (max-width: 425px) {
+            min-height: 100px;
+            height: auto;
         }
     `
 }

@@ -11,6 +11,7 @@ export const Styled = {
         top: 0;
         background-color: #DAF0FF;
         z-index: 1;
+        
 
     `,
     Ellipse : styled.div`
@@ -26,6 +27,17 @@ export const Styled = {
         @media (max-width: 768px) {
             border-radius: 0%;
             background-color: rgba(16, 157, 255, 0.5);
+            
+        }
+        @media (max-width: 426px) {
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
         }
     `,
     DecorEllipseWhite : styled.div`
@@ -39,8 +51,8 @@ export const Styled = {
         @media (max-width: 768px) {
             z-index: 10;
         }
-        @media (max-width: 768px) {
-            z-index: 0;
+        @media (max-width: 529px) {
+            display: none;
         }
     `,
     DecorEllipseBlue : styled.div`

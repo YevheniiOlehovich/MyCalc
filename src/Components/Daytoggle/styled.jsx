@@ -13,6 +13,9 @@ export const Styled = {
         padding: 4px 6px;
         transition: background 0.5s ease-in-out;
         border: 1px solid gold;
+        @media (max-width: 425px) {
+            padding: 2px;
+        }
     `,
 
     ToggleContainer : styled.div`
@@ -24,6 +27,12 @@ export const Styled = {
         left: ${({ nightmode }) => (nightmode ? "4px" : "calc(100% - 40px)")};
         transition: left 0.5s ease-in-out;
         z-index: 5;
+        @media (max-width: 425px) {
+            width: 20px;
+            height: 20px;
+            top: 0px;
+            left: ${({ nightmode }) => (nightmode ? "4px" : "calc(100% - 20px)")};
+        }
     `,
     ToggleDecor : styled.div`
         width: 50px;
@@ -32,6 +41,11 @@ export const Styled = {
         top: 2px;
         right: ${({ nightmode }) => (nightmode ? "8px" : "calc(100% - 50px)")};
         transition: right 0.5s ease-in-out;
+        @media (max-width: 425px) {
+            width: 25px;
+            height: 15px;
+            top: 0px;
+        }
     `,
 
     ToggleIco : styled.img`

@@ -20,9 +20,10 @@ export const Styled = {
             left: 50%;
             transform: translateX(-50%);
         }
-        @media (max-width: 768px) {
-            height: 690px;
-        }
+        @media (max-width: 426px){
+            height: auto;
+            width: 375px;
+        } 
     `,
     Shadow : styled.div`
         position: absolute;

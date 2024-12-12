@@ -11,6 +11,9 @@ export const Styled = {
         display: flex;
         flex-direction: column;
         position: relative;
+        @media (max-width: 425px) {
+            height: auto;
+        }
     `,
     Row: styled.div`
         display: flex;
@@ -28,5 +31,11 @@ export const Styled = {
         position: absolute;
         bottom: 0;
         left: 0;
+        @media (max-width: 426px) {
+            width: 240px;
+        }
+        @media (max-width: 426px) {
+            width: 226px;
+        }
     `
 }

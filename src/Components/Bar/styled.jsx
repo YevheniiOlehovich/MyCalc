@@ -9,10 +9,15 @@ export const Styled = {
         justify-content: space-between;
         margin: 0;
         padding: 0;
-
+        @media (max-width: 425px) {
+            height: 20px;
+        }
     `,
     ToggleBox : styled.div`
         width: 100px;
         height: 40px;
+        @media (max-width: 425px) {
+            height: 20px;
+        }
     `
 }
