@@ -123,18 +123,14 @@ Error generating stack: `+u.message+`
             transform: translateX(-50%);
         }
         @media (max-width: 426px){
-            height: 700px;
+            height: 800px;
             width: 100vw;
         } 
         @media (max-width: 376px) {
-            height: 700px;
-            width: 100vw;
             top: 0;
             left: 0;
             transform: translateX(0);
             justify-content: space-between;
-            
-            
         }
     `,Shadow:Ne.div`
         position: absolute;
