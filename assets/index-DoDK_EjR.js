@@ -173,6 +173,12 @@ Error generating stack: `+u.message+`
         position: absolute;
         bottom: 0;
         left: 0;
+        @media (max-width: 426px) {
+            width: 260px;
+        }
+        @media (max-width: 425px) {
+            width: 226px;
+        }
     `},vy={Wrapper:Ne.div`
         width: ${({width:i})=>i==="big"?"144px":"62px"};;
         height: ${({height:i})=>i==="small"?"40px":i==="big"?"96px":"62px"};
