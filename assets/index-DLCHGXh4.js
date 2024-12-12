@@ -130,7 +130,7 @@ Error generating stack: `+u.message+`
             transform: translateX(0);
             justify-content: space-between;
             /* height: calc(100vh - 8px); */
-            height: 700px;
+            height: 500px;
             width: 100vw;
         } 
     `,Shadow:Ne.div`
