@@ -70,6 +70,7 @@ Error generating stack: `+u.message+`
         @media (max-width: 768px) {
             border-radius: 0%;
             background-color: rgba(16, 157, 255, 0.5);
+            
         }
     `,DecorEllipseWhite:Ne.div`
         position: absolute;
@@ -115,6 +116,7 @@ Error generating stack: `+u.message+`
         @media (max-width: 768px) {
             height: 690px;
             top: 100px;
+            height: 100vh;
         }
     `,Shadow:Ne.div`
         position: absolute;
