@@ -176,7 +176,7 @@ Error generating stack: `+u.message+`
         @media (max-width: 426px) {
             width: 260px;
         }
-        @media (max-width: 425px) {
+        @media (max-width: 375px) {
             width: 226px;
         }
     `},vy={Wrapper:Ne.div`
