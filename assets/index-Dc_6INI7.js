@@ -114,6 +114,7 @@ Error generating stack: `+u.message+`
         }
         @media (max-width: 768px) {
             height: 690px;
+            top: 100px;
         }
     `,Shadow:Ne.div`
         position: absolute;
