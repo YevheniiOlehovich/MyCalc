@@ -219,7 +219,7 @@ Error generating stack: `+u.message+`
         margin: 0;
         display: flex;
         flex-direction: column;
-        @media (max-width: 376px) {
+        @media (max-width: 425px) {
             min-height: 200px;
             height: auto;
             font-size: 24px;
@@ -230,7 +230,7 @@ Error generating stack: `+u.message+`
         align-items: center;
         justify-content: flex-end;
         color: #818181;
-        @media (max-width: 376px) {
+        @media (max-width: 425px) {
             min-height: 100px;
             height: auto;
         }
@@ -240,7 +240,7 @@ Error generating stack: `+u.message+`
         align-items: center;
         justify-content: flex-end;
         color: ${({nightmode:i})=>i?"#424242":"#fff"};
-        @media (max-width: 376px) {
+        @media (max-width: 425px) {
             min-height: 100px;
             height: auto;
         }
@@ -252,10 +252,15 @@ Error generating stack: `+u.message+`
         justify-content: space-between;
         margin: 0;
         padding: 0;
-
+        @media (max-width: 425px) {
+            height: 20px;
+        }
     `,ToggleBox:Ne.div`
         width: 100px;
         height: 40px;
+        @media (max-width: 425px) {
+            height: 20px;
+        }
     `},oi={Wrapper:Ne.div`
         width: 100%;
         height: 100%;
@@ -268,6 +273,9 @@ Error generating stack: `+u.message+`
         padding: 4px 6px;
         transition: background 0.5s ease-in-out;
         border: 1px solid gold;
+        @media (max-width: 425px) {
+            padding: 2px;
+        }
     `,ToggleContainer:Ne.div`
         width: 36px;
         height: 36px;
@@ -277,6 +285,12 @@ Error generating stack: `+u.message+`
         left: ${({nightmode:i})=>i?"4px":"calc(100% - 40px)"};
         transition: left 0.5s ease-in-out;
         z-index: 5;
+        @media (max-width: 425px) {
+            width: 20px;
+            height: 20px;
+            top: 0px;
+            left: ${({nightmode:i})=>i?"4px":"calc(100% - 20px)"};
+        }
     `,ToggleDecor:Ne.div`
         width: 50px;
         height: 32px;
@@ -284,6 +298,11 @@ Error generating stack: `+u.message+`
         top: 2px;
         right: ${({nightmode:i})=>i?"8px":"calc(100% - 50px)"};
         transition: right 0.5s ease-in-out;
+        @media (max-width: 425px) {
+            width: 25px;
+            height: 15px;
+            top: 0px;
+        }
     `,ToggleIco:Ne.img`
         width: 100%;
         height: 100%;
