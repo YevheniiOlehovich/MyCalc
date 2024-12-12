@@ -56,6 +56,9 @@ Error generating stack: `+u.message+`
         top: 0;
         background-color: #DAF0FF;
         z-index: 1;
+        @media (max-width: 376px) {
+            display: none;
+        }
 
     `,Ellipse:Ne.div`
         position: absolute;
@@ -72,6 +75,9 @@ Error generating stack: `+u.message+`
             background-color: rgba(16, 157, 255, 0.5);
             
         }
+        @media (max-width: 376px) {
+            display: none;
+        }
     `,DecorEllipseWhite:Ne.div`
         position: absolute;
         top: 200px;
@@ -83,8 +89,8 @@ Error generating stack: `+u.message+`
         @media (max-width: 768px) {
             z-index: 10;
         }
-        @media (max-width: 768px) {
-            z-index: 0;
+        @media (max-width: 376px) {
+            display: none;
         }
     `,DecorEllipseBlue:Ne.div`
         position: absolute;
