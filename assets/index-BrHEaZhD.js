@@ -92,7 +92,7 @@ Error generating stack: `+u.message+`
         @media (max-width: 768px) {
             z-index: 10;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 529px) {
             display: none;
         }
     `,DecorEllipseBlue:Ne.div`
@@ -127,6 +127,7 @@ Error generating stack: `+u.message+`
             top: 0;
             left: 0;
             transform: translateX(0);
+            justify-content: space-between;
             
         }
     `,Shadow:Ne.div`
@@ -155,6 +156,9 @@ Error generating stack: `+u.message+`
         display: flex;
         flex-direction: column;
         position: relative;
+        @media (max-width: 376px) {
+            height: auto;
+        }
     `,Row:Ne.div`
         display: flex;
         width: 100%;
@@ -196,6 +200,11 @@ Error generating stack: `+u.message+`
         margin-bottom: ${({noneMargin:o})=>o==="none"?"0":"16px"};
         &:active{
             transform: translateY(2px);
+        }
+        @media (max-width: 376px) {
+            width: ${({width:o})=>o==="big"?"144px":"60px"};
+            height: ${({height:o})=>o==="small"?"32px":o==="big"?"70px":"40px"};
+            margin-bottom: ${({noneMargin:o})=>o==="none"?"0":"8px"};
         }
     `};function Ce({text:o,colour:l,height:s,width:c,noneMargin:f,onClick:p}){const g=po(k=>k.theme.nightmode);return X.jsx(vy.Wrapper,{colour:l,height:s,width:c,noneMargin:f,nightmode:g,onClick:p,children:o})}const hd=o=>parseFloat(o.toFixed(6));function wy(){const o=wd(),l=po(k=>k.calculator.input),s=k=>{o(Pi(l+k))},c=()=>{o(p0())},f=k=>{try{const x=parseFloat(l);if(isNaN(x))return;let C;switch(k){case"sin":C=Math.sin(x*Math.PI/180);break;case"exp":C=Math.exp(x);break;case"deg":C=x*Math.PI/180;break;case"log":if(x<=0)throw new Error("Log error");C=Math.log10(x);break;default:return}C=hd(C),o(Ni(C)),o(Pi(""))}catch{o(Ni("Error"))}},p=()=>{try{const k=l.replace(/[^-()\d/*+.]/g,""),x=new Function(`return ${k}`)(),C=hd(x);o(Ni(C)),o(Pi(""))}catch{o(Ni("Error"))}},g=()=>{l.length>0&&o(Pi(l.slice(0,-1)))};return X.jsxs(On.Wrapper,{children:[X.jsxs(On.Row,{children:[X.jsxs(On.Column,{children:[X.jsx(Ce,{text:"e^x",height:"small",onClick:()=>f("exp")}),X.jsx(Ce,{text:"Ac",onClick:c}),X.jsx(Ce,{text:"7",onClick:()=>s("7")}),X.jsx(Ce,{text:"4",onClick:()=>s("4")}),X.jsx(Ce,{text:"1",onClick:()=>s("1")})]}),X.jsxs(On.Column,{children:[X.jsx(Ce,{text:"log",height:"small",onClick:()=>f("log")}),X.jsx(Ce,{text:"⌫",onClick:g}),X.jsx(Ce,{text:"8",onClick:()=>s("8")}),X.jsx(Ce,{text:"5",onClick:()=>s("5")}),X.jsx(Ce,{text:"2",onClick:()=>s("2")})]}),X.jsxs(On.Column,{children:[X.jsx(Ce,{text:"sin",height:"small",onClick:()=>f("sin")}),X.jsx(Ce,{text:"/",colour:"blue",onClick:()=>s("/")}),X.jsx(Ce,{text:"9",onClick:()=>s("9")}),X.jsx(Ce,{text:"6",onClick:()=>s("6")}),X.jsx(Ce,{text:"3",onClick:()=>s("3")})]}),X.jsxs(On.Column,{children:[X.jsx(Ce,{text:"deg",height:"small",onClick:()=>f("deg")}),X.jsx(Ce,{text:"*",colour:"blue",onClick:()=>s("*")}),X.jsx(Ce,{text:"-",colour:"blue",onClick:()=>s("-")}),X.jsx(Ce,{text:"+",colour:"blue",height:"big",onClick:()=>s("+")}),X.jsx(Ce,{text:"=",colour:"blue",background:"blue",height:"big",noneMargin:"none",onClick:p})]})]}),X.jsxs(On.Block,{children:[X.jsx(Ce,{text:"0",width:"big",noneMargin:"none",onClick:()=>s("0")}),X.jsx(Ce,{text:".",noneMargin:"none",onClick:()=>s(".")})]})]})}const cs={Wrapper:Ne.div`
         width: 100%;
