@@ -67,6 +67,10 @@ Error generating stack: `+u.message+`
         height: 900px;
         background-color: #109DFF;
         border-radius: 50%;
+        @media (max-width: 768px) {
+            border-radius: 0%;
+            background-color: rgba(16, 157, 255, 0.5);
+        }
     `,DecorEllipseWhite:Ne.div`
         position: absolute;
         top: 200px;
@@ -75,6 +79,9 @@ Error generating stack: `+u.message+`
         height: 23px;
         border-radius: 50%;
         background-color: white;
+        @media (max-width: 768px) {
+            z-index: 10;
+        }
     `,DecorEllipseBlue:Ne.div`
         position: absolute;
         bottom: 130px;
@@ -96,6 +103,12 @@ Error generating stack: `+u.message+`
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        @media (max-width: 768px) {
+            top: 40px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     `,Shadow:Ne.div`
         position: absolute;
         width: 375px;
@@ -106,6 +119,12 @@ Error generating stack: `+u.message+`
         background-color: rgba(0, 68, 115, 0.28);
         border-radius: 40px;
         filter: blur(8px);
+        @media (max-width: 768px) {
+            top: 60px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-40%);
+        }
     `},On={Wrapper:Ne.div`
         width: 100%;
         height: 420px;
