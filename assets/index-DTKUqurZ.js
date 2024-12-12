@@ -127,7 +127,7 @@ Error generating stack: `+u.message+`
             left: 0;
             transform: translateX(0);
             justify-content: space-between;
-            height: 100vh;
+            height: calc(100% - 8px);
             width: 100vw;
         } 
     `,Shadow:Ne.div`
