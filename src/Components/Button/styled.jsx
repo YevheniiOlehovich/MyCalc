@@ -51,7 +51,6 @@ export const Styled = {
                 
             }};
 
-            border: 1px solid gold;
             box-sizing: border-box;
         }
         margin-bottom: ${({ noneMargin }) => {
@@ -60,17 +59,20 @@ export const Styled = {
         }};
         &:active{
             transform: translateY(2px);
+            border: 1px solid #1991FF;
         }
         @media (max-width: 425px) {
             width: ${({ width }) => {
-            if (width === 'big') return '144px'; /* Змінене значення */
+            if (width === 'big') return '144px'; 
             return '60px';
             }};
+
             height: ${({ height }) => {
             if (height === 'small') return '32px';
             if (height === 'big') return '70px';
             return '40px';
             }};
+            
             margin-bottom: ${({ noneMargin }) => {
             if (noneMargin === 'none') return '0';
             return '8px';

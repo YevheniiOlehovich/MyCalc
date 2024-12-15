@@ -17,7 +17,8 @@ export const Styled = {
         width: 100px;
         height: 40px;
         @media (max-width: 425px) {
-            height: 20px;
+            height: 30px;
+            width: 75px;
         }
     `
 }

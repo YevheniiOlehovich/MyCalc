@@ -28,10 +28,10 @@ export const Styled = {
         transition: left 0.5s ease-in-out;
         z-index: 5;
         @media (max-width: 425px) {
-            width: 20px;
-            height: 20px;
-            top: 0px;
-            left: ${({ nightmode }) => (nightmode ? "4px" : "calc(100% - 20px)")};
+            width: 30px;
+            height: 30px;
+            top: -1px;
+            left: ${({ nightmode }) => (nightmode ? "4px" : "calc(100% - 30px)")};
         }
     `,
     ToggleDecor : styled.div`
@@ -41,10 +41,12 @@ export const Styled = {
         top: 2px;
         right: ${({ nightmode }) => (nightmode ? "8px" : "calc(100% - 50px)")};
         transition: right 0.5s ease-in-out;
+
         @media (max-width: 425px) {
-            width: 25px;
-            height: 15px;
-            top: 0px;
+            width: 30px;
+            height: 20px;
+            top: 4px;
+            right: ${({ nightmode }) => (nightmode ? "8px" : "calc(100% - 35px)")};
         }
     `,
 
