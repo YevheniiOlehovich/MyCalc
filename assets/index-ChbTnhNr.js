@@ -222,7 +222,7 @@ Error generating stack: `+u.message+`
         display: flex;
         flex-direction: column;
         @media (max-width: 425px) {
-            min-height: 2500px;
+            min-height: 250px;
             height: auto;
             font-size: 24px;
         }
