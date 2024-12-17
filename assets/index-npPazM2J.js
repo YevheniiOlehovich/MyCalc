@@ -222,7 +222,7 @@ Error generating stack: `+u.message+`
         display: flex;
         flex-direction: column;
         @media (max-width: 425px) {
-            min-height: 200px;
+            min-height: 270px;
             height: auto;
             font-size: 24px;
         }
@@ -243,7 +243,7 @@ Error generating stack: `+u.message+`
         justify-content: flex-end;
         color: ${({nightmode:i})=>i?"#424242":"#fff"};
         @media (max-width: 425px) {
-            min-height: 100px;
+            min-height: 170px;
             height: auto;
         }
     `};function Sy(){const{input:i="",result:l="0",nightmode:s}=di(c=>({...c.calculator,nightmode:c.theme.nightmode}));return X.jsxs(cs.Wrapper,{nightmode:s,children:[X.jsx(cs.Header,{children:i}),l&&X.jsxs(cs.Footer,{nightmode:s,children:["= ",l]})]})}const md={Wrapper:Ne.div`
