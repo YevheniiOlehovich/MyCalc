@@ -11,7 +11,7 @@ export const Styled = {
         display: flex;
         flex-direction: column;
         @media (max-width: 425px) {
-            min-height: 200px;
+            min-height: 300px;
             height: auto;
             font-size: 24px;
         }
@@ -23,7 +23,7 @@ export const Styled = {
         justify-content: flex-end;
         color: #818181;
         @media (max-width: 425px) {
-            min-height: 100px;
+            min-height: 130px;
             height: auto;
         }
     `,
@@ -34,7 +34,7 @@ export const Styled = {
         justify-content: flex-end;
         color: ${({ nightmode }) => (nightmode ? "#424242" : "#fff")};
         @media (max-width: 425px) {
-            min-height: 100px;
+            min-height: 170px;
             height: auto;
         }
     `

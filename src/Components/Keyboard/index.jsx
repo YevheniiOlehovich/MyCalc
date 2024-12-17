@@ -43,7 +43,7 @@ export default function Keyboard() {
 
             result = roundToSix(result);
             dispatch(setResult(result));
-            dispatch(setInput(""));
+            dispatch(setInput(result));
         } catch {
             dispatch(setResult("Error"));
         }
@@ -55,7 +55,7 @@ export default function Keyboard() {
             const calculatedResult = new Function(`return ${sanitizedInput}`)();
             const roundedResult = roundToSix(calculatedResult);
             dispatch(setResult(roundedResult));
-            dispatch(setInput(""));
+            dispatch(setInput(roundedResult));
         } catch {
             dispatch(setResult("Error"));
         }
